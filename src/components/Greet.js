@@ -5,7 +5,7 @@ import React from "react";
 }*/
 
 //destructuring props
-const Greet = ({ name, anotherName }) => {
+const Greet = ({ name, anotherName }) => { // destructuring in parameter
   //const Greet = (props) => {
   return (
     <div>
@@ -13,16 +13,16 @@ const Greet = ({ name, anotherName }) => {
         {/*Hello {props.name} also {props.anotherName}---with destructuring we can just use name and anotherName in the JSX*/}
         Hello {name} also {anotherName}
       </h1>
-      {props.children}
+      {/*{props.children}*/}
     </div>
   );
 };
 
 export default Greet;
 
-//Another way od destructuring properties in functional components is inside the function
-{
-  /*const Greet = prop => {
+//Another way of destructuring properties in functional components is inside the function
+
+/*const Greet = prop => {
   const {name, anotherName} = props
   return (
     <div>
@@ -30,4 +30,3 @@ export default Greet;
     </div>
   )
 }*/
-}

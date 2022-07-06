@@ -4,6 +4,7 @@ class Welcome extends Component {
   render() {
     //destructuring props in class components is done in the render method
     //const {name, anotherName} = this.props
+    //in jsx you can now remove this.props
     //you can also destructure states in the same way
     //const {state1, state2} = this.state
     return (

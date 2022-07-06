@@ -19,6 +19,9 @@ class EventBind extends Component {
       <div>
         <div>{this.state.message}</div>
         <button onClick={this.clickHandler.bind(this)}>Click</button>
+        {/*}binding is done because this keyword is not defined for eventhandlers*/}
+        {/*another approach is using arrow fn
+        <button onClick={() => this.clickHandler()}>Click</button> */}
       </div>
     );
   }
